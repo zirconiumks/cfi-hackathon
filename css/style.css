@@ -1,0 +1,1451 @@
+/*--------------------------------------------------------------------------
+   
+	Code for India Custom Theme Redesign
+
+	0. YUI Library is used for CSS reset (http://yuilibrary.com/yui/docs/cssreset/)
+	1. Body
+	2. Typography
+	3. Page Sections
+		3.1. Topbar
+		3.2. Event
+		3.3. Section White Type 1
+		3.4. Section White Type 2
+		3.5. Section Black Type 1
+		3.6. Section Black Type 2
+		3.7. Section Red
+		3.8. Section Green
+		3.9. Section Yellow
+		3.10. Section Pattern
+		3.11. Section Red Form
+		3.12. Section Green Form
+		3.13. Section Yellow Form
+		3.14. Section Media
+		3.15. Section Buttons
+		3.16. Section Footer
+	4. Forms
+
+--------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------
+	1. Body
+--------------------------------------------------------------------------*/
+
+body {
+	color: #333;
+	background: #fff;
+	font: normal 16px/28px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+}
+
+
+
+/*--------------------------------------------------------------------------
+	2. Typography
+--------------------------------------------------------------------------*/
+
+/* Links */
+a, a:visited { color: #333; text-decoration: none; outline: 0; }
+a:hover, a:focus { color: #000; }
+p a, p a:visited { line-height: inherit; }
+
+/* Font stylings */
+em { font-style: italic; }
+strong { font-weight: bold; }
+small { font-size: 80%; }
+
+
+
+/*--------------------------------------------------------------------------
+	3. Sections
+
+	* Each block of the HTML page is named similar to "section-name"
+	* If you don't need a specific section, just remove the whole section div block in the HTML file
+--------------------------------------------------------------------------*/
+
+/* Common elements */
+
+h2 { 
+	font: bold 36px/48px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+p.desc {
+	font: normal 14px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Font colors */
+.font-color-primary {
+	color: #dd3333;
+}
+
+.font-color-white {
+	color: #fff;
+}
+
+/* Colors - Underline */
+.underline-color-primary {
+	border-bottom: 1px solid #dd3333;
+}
+
+img { max-width: 100%; }
+
+
+
+	/*---------------------------------------------------
+		3.1 Topbar
+
+		* This is the fixed top navigation
+	---------------------------------------------------*/
+
+	/* Topbar (fixed) */
+	/* Please refer to responsive_custom.css for CSS in smaller viewport */
+	#section-topbar {
+		height: 40px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 10000;
+		overflow: visible;
+		font: normal normal 16px/24px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+
+	#topbar-inner {
+		/*	*	*	*	*	*	*	*	*	*	*	*
+			bg_alpha50.png file is used for transparent background 
+			Look in the documentation file for usages of transparent png overlays
+		*	*	*	*	*	*	*	*	*	*	*	*/
+		background: #111;
+	}
+
+		#section-topbar a {
+			color: #fff;
+		}
+
+	/*	*	*	*	*	*	*	*	*	*	*	*
+		In mobile viewports, the list menu is converted to "select" element via javascript
+		https://github.com/lukaszfiszer/selectnav.js
+	*	*	*	*	*	*	*	*	*	*	*	*/
+	.selectnav { display: none; }
+
+
+	/*
+		Top Bar
+
+		By default, top navigation bar uses "fixed" position
+		Menu collapses in mobile viewports
+		Refer to css/responsive_custom.css for mobile layouts
+	*/
+	#section-topbar ul#nav {
+		display: block;
+		float: right;
+		position: relative;
+		margin: 0;
+	}
+
+	#section-topbar ul#nav > li {
+		display: block;
+		float: left;
+	}
+
+
+	#section-topbar ul#nav a {
+	  display: block;
+	  padding: 10px 20px 15px 20px;
+	  font: normal 11px/18px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  text-decoration: none;
+	}
+
+		#section-topbar ul#nav a {
+			border-top: 3px solid #000;
+		}
+
+		#section-topbar ul#nav a:hover {
+		  border-top: 3px solid #dd3333;
+		  text-decoration: none;
+		}
+
+		#section-topbar ul#nav .active a {
+			border-top: 3px solid #dd3333;
+		}
+
+		#section-topbar ul#nav ul{
+			display: none;
+			position: absolute;
+			top: 100%;
+		}
+
+		#section-topbar ul#nav ul li {
+			float: none;
+			position: relative;
+			background: #000;
+		}
+
+		#section-topbar ul#nav ul li a:hover {
+			background: #dd3333;
+		}
+
+		#section-topbar ul#nav li:hover > ul {
+			display: block;
+		}
+
+
+	/*---------------------------------------------------
+		3.2 Event
+		
+		* Includes site logo and event details
+		* Date, Time, and Location of the event
+	---------------------------------------------------*/
+	
+	#section-header {
+		color: #fff;
+		/* The background image used in this template is 1980 by 650 pixels */
+		background: #111 url('../images/cfi-background-a70.jpg') no-repeat center 0;
+		padding-top: 190px;
+	}
+
+		/* Site Title/Logo */
+		#section-header h1 { 
+			color: #fff;
+			font: bold 45px/65px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			text-transform: uppercase;
+			margin-bottom: 30px;
+		}
+
+		#section-header h1 a {
+			color: #dd3333;
+		}
+
+		#section-header h1 a:hover {
+			color: #dd3333;
+		}
+
+		#section-header p#logo-desc {
+			color: #000;
+			padding-top: 3em;
+		}
+
+		#section-header p#logo-desc img {
+			margin-bottom: 30px;
+		}
+
+
+		/* Event information */
+		#section-info {
+			background: url('../images/alpha/bg_alpha70.png');
+			margin-top: 120px;
+			padding: 30px 0;
+		}
+
+			#section-info h2 {
+				color: #fff;
+				font: 16px/28px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+				text-transform: uppercase;
+				margin-bottom: 20px;
+			}
+
+			#section-info #box-date {
+				background: url('../images/icons/icon_date.png') no-repeat left 5px;
+				padding-left: 70px;
+			}
+
+			#section-info #box-time {
+				background: url('../images/icons/icon_time.png') no-repeat left 5px;
+				padding-left: 70px;
+			}
+
+			#section-info #box-location {
+				background: url('../images/icons/icon_map.png') no-repeat left 5px;
+				padding-left: 70px;
+			}
+
+			#section-info h3 {
+				color: #aaa;
+				font: 13px/22px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+				text-transform: uppercase;
+				margin-bottom: 4px;
+				letter-spacing: 2px;
+			}
+
+			#section-info p {
+				color: #fff;
+				font: normal 13px/23px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			}
+
+
+
+	/*---------------------------------------------------
+		3.3 Section White Type 1
+	---------------------------------------------------*/
+
+	#section-white-type1 {
+		color: #333;
+		background: #fff;
+		padding: 60px 0;
+	}
+
+		#section-white-type1 h2 {
+			color: #333;
+		}
+
+		#section-white-type1 p.desc {
+			color: #dd3333;
+		}
+
+		#section-white-type1 p {
+			margin-bottom: 40px;
+		}
+
+		/* Each speaker is wrapped by div#item */
+		#section-white-type1 .item {
+			
+		}
+
+			#section-white-type1 .item h3 {
+				color: #333;
+				font: normal 18px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+				margin-top: 10px;
+			}
+
+				/* Speaker title */
+				#section-white-type1 .item h3 span {
+					color: #dd3333;
+					background: #fff;
+					font: normal 11px/21px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+					display: inline-block;
+					padding: 4px 0 0 0;
+					border-bottom: 1px solid #dd3333;
+					
+				}
+
+			#section-white-type1 .item p {
+				font: normal 13px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+				color: #333;
+				margin-top: 10px;
+			}
+
+		#section-white-type1  #box-date {
+				background: url('../images/icons/icon_date.png') no-repeat left 5px;
+				padding-left: 70px;
+			}
+
+			#section-white-type1 #box-time {
+				background: url('../images/icons/icon_time.png') no-repeat left 5px;
+				padding-left: 70px;
+			}
+
+			#section-white-type1 #box-location {
+				background: url('../images/icons/icon_map.png') no-repeat left 5px;
+				padding-left: 70px;
+			}
+
+			#section-white-type1 #box-media {
+				background: url('../images/icons/icon_youtube.png') no-repeat left 5px;
+				padding-left: 70px;
+			}
+
+			#section-white-type1 h3 {
+				color: #dd3333;
+				font: bold 13px/22px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+				text-transform: uppercase;
+				margin-bottom: 4px;
+				letter-spacing: 2px;
+			}
+
+			#section-white-type1 ul li ul {
+				font-size: smaller;
+				margin-left: 1em;
+			}
+
+
+	/*---------------------------------------------------
+		3.4 Section White Type 2
+	---------------------------------------------------*/
+
+	#section-white-type2 {
+		color: #333;
+		background: #fff;
+		padding: 60px 0;
+	}
+
+		#section-white-type2 h2 {
+		}
+
+		#section-white-type2 p.desc {
+			color: #dd3333;
+		}
+
+		#section-white-type2 p.headline {
+			color: #111;
+			font: italic 24px/36px 'PT Serif', Georgia, serif;
+			text-align: left;
+		}
+
+		#section-white-type2 p {
+			color: #555;
+			font: normal 14px/25px 'PT Serif', Georgia, serif;
+			margin-bottom: 30px;
+		}
+
+		#section-white-type2 p img.news-image {
+			background: #fff;
+			border: 1px solid #ddd;
+			padding: 4px;
+			float: left;
+			margin: 0 20px 10px 0;
+		}
+
+			#section-white-type2 p img.news-image.right {
+				float: right;
+				margin: 0 0 10px 20px;
+			}
+			
+		#section-white-type2 ul {
+			font: normal 15px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			margin-bottom: 30px;
+		}
+
+			#section-white-type2 ul li {
+				color: #444;
+				background: #fff;
+				margin-top: 2px;
+				padding: 16px 24px;
+			}
+
+
+	/*---------------------------------------------------
+		3.5 Section Black Type 1
+	---------------------------------------------------*/
+
+	#section-black-type1 {
+		color: #fff;
+		background: #111 url('../images/bg_gradient.jpg') no-repeat center center;
+		font: normal 12px/24px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		padding: 60px 0;
+	}
+
+		#section-black-type1 h2 {
+			color: #fff;
+			margin-bottom: 5px;
+		}
+
+		#section-black-type1 p.desc {
+			color: #dd3333;
+			margin-bottom: 50px;
+		}
+
+
+		#section-black-type1 .profile img {
+			padding: 3px;
+			border: 1px solid #333;
+			width: 70px;
+			float: left;
+			margin-right: 15px;
+		}
+		
+		#section-black-type1 blockquote.bubble {
+			position:relative;
+			background: #fff;
+			padding: 15px 20px;
+			margin-bottom: 15px;
+
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+			
+		}
+		
+			#section-black-type1 blockquote.bubble p {
+				color: #333;
+				font: normal 13px/23px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			}
+
+				#section-black-type1 span.title {
+					color: #dd3333;
+				}
+		
+			/* creates the triangle */
+			#section-black-type1 blockquote.bubble:after {
+				content: "";
+				position: absolute;
+				top: -23px;
+				left: 50px;
+				border: 15px solid transparent;
+				border-bottom-color: #fff;
+
+				/* reduce the damage in FF3.0 */
+				display: block; 
+				width: 0;
+			}
+			
+			/* display of quote author (alternatively use a class on the element following the blockquote) */
+			#section-black-type1 blockquote.bubble + p {
+				padding-left:15px; 
+			}
+
+	/*---------------------------------------------------
+		3.6 Section Type Black 2
+	---------------------------------------------------*/
+
+	#section-black-type2 {
+		color: #333;
+		background: #111;
+		padding: 60px 0 40px;
+	}
+
+		#section-black-type2 h2 {
+			font: bold 24px/36px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			margin-bottom: 20px;
+		}
+
+		#section-black-type2 img {
+			margin-bottom: 20px;
+		}
+
+
+	/*---------------------------------------------------
+		3.7 Section Red
+	---------------------------------------------------*/
+
+	#section-red {
+		color: #fff;
+		background: #dd3333;
+		font: normal 16px/27px 'PT Serif', Georgia, serif;
+		padding: 60px 0 40px 0;
+	}
+
+		#section-red p {
+			font: normal 12px/24px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			color: #fff;
+			margin-bottom: 40px;
+		}
+
+		#section-red p.headline {
+			color: #fff;
+			font: italic 24px/36px 'PT Serif', Georgia, serif;
+			text-align: left;
+		}
+
+		#section-red p img {
+			float: left;
+			margin: 0 18px 9px 0;
+		}
+
+	/*---------------------------------------------------
+		3.8 Section Green
+	---------------------------------------------------*/
+
+	#section-green {
+		color: #fff;
+		background: #77aa44;
+		padding: 60px 0 30px 0;
+	}
+
+		#section-green p.headline {
+			font: italic 24px/36px 'PT Serif', Georgia, serif;
+			text-align: left;
+			color: #fff;
+			margin-bottom: 0.5em;
+		}
+
+		#section-green p {
+			color: #fff;
+			font: normal 12px/24px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			margin-bottom: 30px;
+		}
+
+		#section-green img {
+			margin-bottom: 30px;
+		}
+
+		#section-green .ngo-sponsor {
+			display: block;
+			font-size: smaller;
+			color: #fff;
+		}
+
+		#section-green .ngo-sponsor:hover {
+			color: #000;
+		}
+
+		#section-green a {
+			color: #fff;
+		}
+
+		#section-green a:hover {
+			color: #000;
+		}
+
+		#section-green ul li {
+			margin-top: 1em;
+		}
+
+		#section-green ul li > ul {
+			margin-left: 1em;
+		}
+
+	/*---------------------------------------------------
+		3.9 Section Yellow
+	---------------------------------------------------*/
+
+	#section-yellow {
+		color: #333;
+		background: #ddaa44;
+		padding: 70px 0;
+	}
+
+		#section-yellow h2 {
+			color: #111;
+			margin-bottom: 10px;
+		}
+
+		#section-yellow p.headline {
+			color: #111;
+			font: italic 24px/36px 'PT Serif', Georgia, serif;
+			text-align: left;
+		}
+
+		#section-yellow p {
+			color: #111;
+			font: normal 15px/27px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			margin-bottom: 30px;
+		}
+
+
+	/*---------------------------------------------------
+		3.10 Section Pattern
+		* CSS is adjusted in the css/responsive_custom.css file
+	---------------------------------------------------*/
+	
+	#section-pattern {
+		background: #fff url('../images/bg_patterns.jpg');
+		border-top: 1px solid #eee;
+		padding: 60px 0 90px 0;
+	}
+
+		#section-pattern h2 {
+			color: #dd3333;
+			text-transform: uppercase;
+			margin-bottom: 30px;
+			text-align: center;
+			letter-spacing: 4px;
+		}
+
+		#section-pattern table {
+			background: #fff;
+			font: normal 14px/24px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			width: 100%;
+		}
+
+			#section-pattern table thead {
+				color: #dd3333;
+				font: bold 22px/31px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				border-bottom: none;
+			}
+			
+				#section-pattern table thead td.column-first {
+					background: #222;
+					border-top: 2px solid #333;
+					border-left: 1px solid #111;
+				}
+				
+				#section-pattern table thead td.column-second {
+					background: #111;
+					border-top: 2px solid #222;
+				}
+				
+				#section-pattern table tbody td.column-first {
+					border-left: 1px solid #eee;
+				}
+				
+				#section-pattern table tbody td.column-second {
+					color: #555;
+					border-right: 1px solid #eee;
+				}
+
+			#section-pattern table tr.even {
+				background: #f8f8f8;
+			}
+
+				#section-pattern table tbody td.column-first {
+					color: #555;
+				}
+
+					#section-pattern table tbody tr.even td.column-first {
+						color: #333;
+					}
+
+				#section-pattern table tbody td.column-second {
+					color: #333;
+					font: normal normal 14px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+					margin-left: 20px;
+					border-left: 1px solid #eee;
+				}
+
+			#section-pattern table td {
+				padding: 20px;
+			}
+			
+			#section-pattern table tfoot td {
+				background: #f3f3f3;
+				padding: 40px;
+				text-align: center;
+				border: 1px solid #eee;
+				border-top: none;
+			}
+			
+				#section-pattern table tfoot span#line-sponsor {
+					color: #444;
+					font: normal normal 10px/20px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+					text-transform: uppercase;
+					letter-spacing: 2px;
+					padding-left: 15px;
+				}
+				
+				#section-pattern table tfoot a {
+					color: #dd3333;
+				}
+
+				#section-pattern table tfoot a:hover {
+					color: #222;
+				}
+
+		#section-pattern p {
+			color: #555;
+			font: normal 13px/21px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			margin-bottom: 30px;
+			text-align: justify;
+		}
+
+
+
+	/*---------------------------------------------------
+		3.11 Section Red Form
+	---------------------------------------------------*/
+	
+	#section-red-form {
+		color: #fff;
+		padding: 0px 0;
+		background: #161616;
+		padding: 60px 0;
+	}
+	
+		#section-red-form h2 {
+			color: #dd3333;
+			margin-bottom: 5px;
+		}
+
+		#section-red-form p.desc {
+			color: #777;
+			margin-bottom: 40px;
+		}
+		
+		
+		/* Register Form */
+		#section-red-form form {
+			margin-bottom: 40px;
+		}
+
+		#section-red-form form p,
+		#section-red-form label,
+		#section-red-form legend { 
+			font: normal 15px/23px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		
+		#section-red-form label {
+			display: inline-block;
+			float: left;
+			width: 155px;
+			margin: 6px 0;
+		}
+		
+		#section-red-form input, 
+		#section-red-form textarea, 
+		#section-red-form select { 
+			width: 280px; 
+			padding: 14px 20px; 
+			color: #eee; 
+			background: #333;
+			margin: 0 0 35px 0; 
+			border: 0;
+			outline: none;
+		}
+		
+		#section-red-form input:focus, 
+		#section-red-form textarea:focus, 
+		#section-red-form select:focus { 
+			color: #fff;
+			background-color: #dd3333;
+		}
+		
+		#section-red-form button.submit {
+			font: bold 20px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			display: block;
+			cursor: pointer;
+			color:#fff;
+			background:#dd3333;
+			padding: 20px 28px;
+			border: none;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			-khtml-border-radius: 3px;
+			border-radius: 3px;
+		}
+		
+		#section-red-form button.submit:hover { 
+			color: #dd3333;
+			background: #fff; 
+		}
+		
+		#section-red-form span.required { 
+			color: #dd3333;
+			font-size: 13px;  
+		} /* Select the color of the * if the field is required. */
+
+		#section-red-form #contact-warning {
+			display: none;
+			color: #fff;
+			background: #dd3333;
+			padding: 20px 25px;
+			margin-bottom: 30px;
+		}
+		
+		#section-red-form #contact-success {
+			display: none;
+			color: #77aa44;
+			background: #111;
+			padding: 20px 25px;
+			margin-bottom: 30px;
+		}
+
+		#section-red-form #box-contact {
+			margin-bottom: 60px;
+		}
+
+			#section-red-form #box-contact h3 {
+				color: #dd3333;
+				font: bold 15px/23px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+				text-transform: uppercase;
+				margin-bottom: 15px;
+			}
+
+			#section-red-form #box-contact p.address {
+				color: #aaa;
+				font: normal 14px/25px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+				margin-bottom: 50px;
+			}
+			
+			#section-red-form #box-contact p.address {
+				color: #aaa;
+				font: normal 14px/25px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+				margin-bottom: 50px;
+			}
+			
+			
+			#section-red-form #box-contact a {
+				color: #fff;
+				font: normal normal 19px/28px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			}
+			
+				#section-red-form #box-contact a:hover {
+					color: #dd3333;
+				}
+
+		/* PDF Download */
+		#section-red-form a.link-pdf {
+			color: #dd3333;
+			background: url(../images/icons/icon_pdf.png) no-repeat;
+			font: bold 16px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			text-transform: uppercase;
+		    display: block;
+		    padding: 40px 60px;
+		}
+
+			#section-red-form a.link-pdf span {
+				background: #fff;
+				padding: 3px 6px;
+			}
+
+
+		#section-red-form a.link-pdf:hover {
+			color: #fff;
+		}
+
+			#section-red-form a.link-pdf:hover span {
+				background: #000;
+			}
+
+
+	/*---------------------------------------------------
+		3.12 Section Green Form
+	---------------------------------------------------*/
+	
+	#section-green-form {
+		color: #fff;
+		padding: 0px 0;
+		background: #161616;
+		padding: 60px 0;
+	}
+	
+		#section-green-form h2 {
+			color: #77aa44;
+			margin-bottom: 5px;
+		}
+
+		#section-green-form p.desc {
+			color: #777;
+			margin-bottom: 40px;
+		}
+		
+		/* Register Form */
+		#section-green-form form {
+			margin-bottom: 40px;
+		}
+
+		#section-green-form form p,
+		#section-green-form label,
+		#section-green-form legend { 
+			font: normal 15px/23px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		
+		#section-green-form label {
+			display: inline-block;
+			float: left;
+			width: 155px;
+			margin: 6px 0;
+		}
+		
+		#section-green-form input, 
+		#section-green-form textarea, 
+		#section-green-form select { 
+			width: 280px; 
+			padding: 14px 20px; 
+			color: #eee; 
+			background: #333;
+			margin: 0 0 35px 0; 
+			border: 0;
+			outline: none;
+		}
+		
+		#section-green-form input:focus, 
+		#section-green-form textarea:focus, 
+		#section-green-form select:focus { 
+			color: #fff;
+			background-color: #77aa44;
+		}
+		
+		#section-green-form button.submit {
+			font: bold 20px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			display: block;
+			cursor: pointer;
+			color:#fff;
+			background:#77aa44;
+			padding: 20px 28px;
+			border: none;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			-khtml-border-radius: 3px;
+			border-radius: 3px;
+		}
+		
+		#section-green-form button.submit:hover { 
+			color: #77aa44;
+			background: #fff; 
+		}
+		
+		#section-green-form span.required { 
+			color: #77aa44;
+			font-size: 13px;  
+		} /* Select the color of the * if the field is required. */
+
+		#section-green-form #contact-warning {
+			display: none;
+			color: #fff;
+			background: #dd3333;
+			padding: 20px 25px;
+			margin-bottom: 30px;
+		}
+		
+		#section-green-form #contact-success {
+			display: none;
+			color: #77aa44;
+			background: #111;
+			padding: 20px 25px;
+			margin-bottom: 30px;
+		}
+
+		#section-green-form #box-contact {
+			margin-bottom: 60px;
+		}
+
+			#section-green-form #box-contact h3 {
+				color: #77aa44;
+				font: bold 15px/23px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+				text-transform: uppercase;
+				margin-bottom: 15px;
+			}
+
+			#section-green-form #box-contact p.address {
+				color: #aaa;
+				font: normal 14px/25px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+				margin-bottom: 50px;
+			}
+			
+			#section-green-form #box-contact p.address {
+				color: #aaa;
+				font: normal 14px/25px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+				margin-bottom: 50px;
+			}
+			
+			
+			#section-green-form #box-contact a {
+				color: #fff;
+				font: normal 19px/28px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			}
+			
+				#section-green-form #box-contact a:hover {
+					color: #77aa44;
+				}
+
+		/* PDF Download */
+		#section-green-form a.link-pdf {
+			color: #77aa44;
+			background: url(../images/icons/icon_pdf.png) no-repeat;
+			font: bold 16px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			text-transform: uppercase;
+		    display: block;
+		    padding: 40px 60px;
+		}
+
+			#section-green-form a.link-pdf span {
+				background: #fff;
+				padding: 3px 6px;
+			}
+
+
+		#section-green-form a.link-pdf:hover {
+			color: #fff;
+		}
+
+			#section-green-form a.link-pdf:hover span {
+				background: #000;
+			}
+
+
+	/*---------------------------------------------------
+		3.13 Section Yellow Form
+	---------------------------------------------------*/
+	
+	#section-yellow-form {
+		color: #fff;
+		padding: 0px 0;
+		background: #161616;
+		padding: 60px 0;
+	}
+	
+		#section-yellow-form h2 {
+			color: #ddaa44;
+			margin-bottom: 5px;
+		}
+
+		#section-yellow-form p.desc {
+			color: #777;
+			margin-bottom: 40px;
+		}
+		
+		/* Register Form */
+		#section-yellow-form form {
+			margin-bottom: 40px;
+		}
+
+		#section-yellow-form form p,
+		#section-yellow-form label,
+		#section-yellow-form legend { 
+			font: normal 15px/23px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		
+		#section-yellow-form label {
+			display: inline-block;
+			float: left;
+			width: 155px;
+			margin: 6px 0;
+		}
+		
+		#section-yellow-form input, 
+		#section-yellow-form textarea, 
+		#section-yellow-form select { 
+			width: 280px; 
+			padding: 14px 20px; 
+			color: #eee; 
+			background: #333;
+			margin: 0 0 35px 0; 
+			border: 0;
+			outline: none;
+		}
+		
+		#section-yellow-form input:focus, 
+		#section-yellow-form textarea:focus, 
+		#section-yellow-form select:focus { 
+			color: #fff;
+			background-color: #ddaa44;
+		}
+		
+		#section-yellow-form button.submit {
+			font: bold 20px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			display: block;
+			cursor: pointer;
+			color:#fff;
+			background:#ddaa44;
+			padding: 20px 28px;
+			border: none;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			-khtml-border-radius: 3px;
+			border-radius: 3px;
+		}
+		
+			#section-yellow-form button.submit:hover { 
+				color: #ddaa44;
+				background: #fff; 
+			}
+		
+		#section-yellow-form span.required { 
+			color: #ddaa44;
+			font-size: 13px;  
+		} /* Select the color of the * if the field is required. */
+
+		#section-yellow-form #contact-warning {
+			display: none;
+			color: #fff;
+			background: #dd3333;
+			padding: 20px 25px;
+			margin-bottom: 30px;
+		}
+		
+		#section-yellow-form #contact-success {
+			display: none;
+			color: #77aa44;
+			background: #111;
+			padding: 20px 25px;
+			margin-bottom: 30px;
+		}
+
+		#section-yellow-form #box-contact {
+			margin-bottom: 60px;
+		}
+
+			#section-yellow-form #box-contact h3 {
+				color: #ddaa44;
+				font: bold 15px/23px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+				text-transform: uppercase;
+				margin-bottom: 15px;
+			}
+
+			#section-yellow-form #box-contact p.address {
+				color: #aaa;
+				font: normal 14px/25px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+				margin-bottom: 50px;
+			}
+			
+			#section-yellow-form #box-contact p.address {
+				color: #aaa;
+				font: normal 14px/25px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+				margin-bottom: 50px;
+			}
+			
+			
+			#section-yellow-form #box-contact a {
+				color: #fff;
+				font: normal 19px/28px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			}
+			
+				#section-yellow-form #box-contact a:hover {
+					color: #ddaa44;
+				}
+
+		/* PDF Download */
+		#section-yellow-form a.link-pdf {
+			color: #ddaa44;
+			background: url(../images/icons/icon_pdf.png) no-repeat;
+			font: bold 16px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			text-transform: uppercase;
+		    display: block;
+		    padding: 40px 60px;
+		}
+
+			#section-yellow-form a.link-pdf span {
+				background: #fff;
+				padding: 3px 6px;
+			}
+
+
+		#section-yellow-form a.link-pdf:hover {
+			color: #fff;
+		}
+
+			#section-yellow-form a.link-pdf:hover span {
+				background: #000;
+			}
+
+
+	/*---------------------------------------------------
+		3.14 Section Media
+	---------------------------------------------------*/
+
+	#section-media {
+		height: 500px;
+		position: relative;
+		overflow: hidden;
+	}
+
+		#section-media #box-media {
+			position: absolute;
+			z-index: 10;
+			top: 60px;
+		}
+
+			#section-media #box-media h2 {
+				color: #222;
+			}
+
+		#media-wrap {
+			width: 100%;
+			height: 100%;
+			position: relative;
+		}
+
+
+	/*---------------------------------------------------
+		3.15 Section Buttons
+	---------------------------------------------------*/
+
+	.button-red-on-white, .button-red-on-black {
+			font: bold 20px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			text-transform: uppercase;
+			text-align: center;
+			letter-spacing: 4px;
+			display: block;
+			cursor: pointer;
+			color:#fff;
+			background:#dd3333;
+			padding: 20px 28px;
+			border: none;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			-khtml-border-radius: 3px;
+			border-radius: 3px;
+	}
+		
+		.button-red-on-white:hover { 
+			color: #dd3333;
+			background: #000; 
+		}
+
+		.button-red-on-black:hover { 
+			color: #dd3333;
+			background: #fff; 
+		}
+
+	.button-green-on-white, .button-green-on-black {
+			font: bold 20px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			text-transform: uppercase;
+			text-align: center;
+			letter-spacing: 4px;
+			display: block;
+			cursor: pointer;
+			color:#fff;
+			background:#77aa44;
+			padding: 20px 28px;
+			border: none;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			-khtml-border-radius: 3px;
+			border-radius: 3px;
+	}
+		
+		.button-green-on-white:hover { 
+			color: #77aa44;
+			background: #000; 
+		}
+
+		.button-green-on-black:hover { 
+			color: #77aa44;
+			background: #fff; 
+		}
+
+	.button-yellow-on-white, .button-yellow-on-black {
+			font: bold 20px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			text-transform: uppercase;
+			text-align: center;
+			letter-spacing: 4px;
+			display: block;
+			cursor: pointer;
+			color:#fff;
+			background:#ddaa44;
+			padding: 20px 28px;
+			border: none;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			-khtml-border-radius: 3px;
+			border-radius: 3px;
+	}
+		
+		.button-yellow-on-white:hover { 
+			color: #ddaa44;
+			background: #000; 
+		}
+
+		.button-yellow-on-black:hover { 
+			color: #ddaa44;
+			background: #fff; 
+		}
+
+	.button-white-on-red, .button-white-on-green, .button-white-on-yellow {
+			font: bold 20px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			text-transform: uppercase;
+			text-align: center;
+			letter-spacing: 4px;
+			display: block;
+			cursor: pointer;
+			color:#fff;
+			background: none;
+			padding: 20px 28px;
+			border: 1px solid #fff;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			-khtml-border-radius: 3px;
+			border-radius: 3px;
+	}
+		
+		.button-white-on-red:hover { 
+			color: #dd3333;
+			background: #fff; 
+		}
+
+		.button-white-on-green:hover { 
+			color: #77aa44;
+			background: #fff; 
+		}
+
+		.button-white-on-yellow:hover { 
+			color: #ddaa44;
+			background: #fff; 
+		}
+
+	.button-black-on-red, .button-black-on-green, .button-black-on-yellow {
+			font: bold 20px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			text-transform: uppercase;
+			text-align: center;
+			letter-spacing: 4px;
+			display: block;
+			cursor: pointer;
+			color:#000;
+			background: none;
+			padding: 20px 28px;
+			border: 1px solid #000;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			-khtml-border-radius: 3px;
+			border-radius: 3px;
+	}
+		
+		.button-black-on-red:hover { 
+			color: #dd3333;
+			background: #000; 
+		}
+
+		.button-black-on-green:hover { 
+			color: #77aa44;
+			background: #000; 
+		}
+
+		.button-black-on-yellow:hover { 
+			color: #ddaa44;
+			background: #000; 
+		}
+
+	.button-blue-on-white, .button-blue-on-black {
+			font: bold 20px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			text-transform: uppercase;
+			text-align: center;
+			letter-spacing: 4px;
+			display: block;
+			cursor: pointer;
+			color:#fff;
+			background:#3b5998;
+			padding: 20px 28px;
+			border: none;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			-khtml-border-radius: 3px;
+			border-radius: 3px;
+	}
+
+		.button-blue-on-white:visited {
+			color: #fff;
+		}
+
+
+	/*---------------------------------------------------
+		3.16 Footer
+	---------------------------------------------------*/
+
+	#section-footer {
+		font: normal 13px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #fff;
+		background: #000;
+	}
+
+		#section-footer p#copytext {
+			color: #777;
+			margin: 35px 0;
+		}
+
+		#section-footer a { color: #dd3333; }
+
+		#section-footer a:hover { color: #eee; }
+
+
+		#section-footer ul#social {
+			float: right;
+			border-left: 1px solid #111;
+		}
+
+		#section-footer ul#social li {
+			display: inline-block;
+			float: left;
+		}
+
+		#section-footer ul#social li a {
+			display: block;
+			padding: 30px;
+			border-right: 1px solid #111;
+		}
+
+		#section-footer ul#social li a:hover {
+			background: #dd3333;
+		}
+
+
+
+/*--------------------------------------------------------------------------
+   4. Forms
+--------------------------------------------------------------------------*/
+
+/* HTML5 Placeholder */
+::-webkit-input-placeholder {
+   color: #dd3333;
+}
+
+:-moz-placeholder {  
+	color: #dd3333;
+}

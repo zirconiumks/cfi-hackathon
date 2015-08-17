@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------------------
-   
+
 	Code for India Custom Theme Redesign
 
 	0. YUI Library is used for CSS reset (http://yuilibrary.com/yui/docs/cssreset/)
@@ -65,7 +65,7 @@ small { font-size: 80%; }
 
 /* Common elements */
 
-h2 { 
+h2 {
 	font: bold 36px/48px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 }
@@ -113,7 +113,7 @@ img { max-width: 100%; }
 
 	#topbar-inner {
 		/*	*	*	*	*	*	*	*	*	*	*	*
-			bg_alpha50.png file is used for transparent background 
+			bg_alpha50.png file is used for transparent background
 			Look in the documentation file for usages of transparent png overlays
 		*	*	*	*	*	*	*	*	*	*	*	*/
 		background: #111;
@@ -193,20 +193,18 @@ img { max-width: 100%; }
 
 	/*---------------------------------------------------
 		3.2 Event
-		
+
 		* Includes site logo and event details
 		* Date, Time, and Location of the event
 	---------------------------------------------------*/
-	
+
 	#section-header {
 		color: #fff;
-		/* The background image used in this template is 1980 by 650 pixels */
-		background: #111 url('../images/cfi-background-a70.jpg') no-repeat center 0;
-		padding-top: 190px;
+		padding-top: 46px;
 	}
 
 		/* Site Title/Logo */
-		#section-header h1 { 
+		#section-header h1 {
 			color: #fff;
 			font: bold 45px/65px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 			text-transform: uppercase;
@@ -234,7 +232,7 @@ img { max-width: 100%; }
 		/* Event information */
 		#section-info {
 			background: url('../images/alpha/bg_alpha70.png');
-			margin-top: 120px;
+      margin-top: -10px;
 			padding: 30px 0;
 		}
 
@@ -299,7 +297,7 @@ img { max-width: 100%; }
 
 		/* Each speaker is wrapped by div#item */
 		#section-white-type1 .item {
-			
+
 		}
 
 			#section-white-type1 .item h3 {
@@ -316,7 +314,7 @@ img { max-width: 100%; }
 					display: inline-block;
 					padding: 4px 0 0 0;
 					border-bottom: 1px solid #dd3333;
-					
+
 				}
 
 			#section-white-type1 .item p {
@@ -341,7 +339,7 @@ img { max-width: 100%; }
 			}
 
 			#section-white-type1 #box-media {
-				background: url('../images/icons/icon_youtube.png') no-repeat left 5px;
+				background: url('../images/icons/icon_edcast.png') no-repeat left 5px;
 				padding-left: 70px;
 			}
 
@@ -400,7 +398,7 @@ img { max-width: 100%; }
 				float: right;
 				margin: 0 0 10px 20px;
 			}
-			
+
 		#section-white-type2 ul {
 			font: normal 15px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 			margin-bottom: 30px;
@@ -443,7 +441,7 @@ img { max-width: 100%; }
 			float: left;
 			margin-right: 15px;
 		}
-		
+
 		#section-black-type1 blockquote.bubble {
 			position:relative;
 			background: #fff;
@@ -453,9 +451,9 @@ img { max-width: 100%; }
 			-webkit-border-radius: 4px;
 			-moz-border-radius: 4px;
 			border-radius: 4px;
-			
+
 		}
-		
+
 			#section-black-type1 blockquote.bubble p {
 				color: #333;
 				font: normal 13px/23px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -464,7 +462,7 @@ img { max-width: 100%; }
 				#section-black-type1 span.title {
 					color: #dd3333;
 				}
-		
+
 			/* creates the triangle */
 			#section-black-type1 blockquote.bubble:after {
 				content: "";
@@ -475,13 +473,13 @@ img { max-width: 100%; }
 				border-bottom-color: #fff;
 
 				/* reduce the damage in FF3.0 */
-				display: block; 
+				display: block;
 				width: 0;
 			}
-			
+
 			/* display of quote author (alternatively use a class on the element following the blockquote) */
 			#section-black-type1 blockquote.bubble + p {
-				padding-left:15px; 
+				padding-left:15px;
 			}
 
 	/*---------------------------------------------------
@@ -617,7 +615,7 @@ img { max-width: 100%; }
 		3.10 Section Pattern
 		* CSS is adjusted in the css/responsive_custom.css file
 	---------------------------------------------------*/
-	
+
 	#section-pattern {
 		background: #fff url('../images/bg_patterns.jpg');
 		border-top: 1px solid #eee;
@@ -645,22 +643,22 @@ img { max-width: 100%; }
 				letter-spacing: 1px;
 				border-bottom: none;
 			}
-			
+
 				#section-pattern table thead td.column-first {
 					background: #222;
 					border-top: 2px solid #333;
 					border-left: 1px solid #111;
 				}
-				
+
 				#section-pattern table thead td.column-second {
 					background: #111;
 					border-top: 2px solid #222;
 				}
-				
+
 				#section-pattern table tbody td.column-first {
 					border-left: 1px solid #eee;
 				}
-				
+
 				#section-pattern table tbody td.column-second {
 					color: #555;
 					border-right: 1px solid #eee;
@@ -688,7 +686,7 @@ img { max-width: 100%; }
 			#section-pattern table td {
 				padding: 20px;
 			}
-			
+
 			#section-pattern table tfoot td {
 				background: #f3f3f3;
 				padding: 40px;
@@ -696,7 +694,7 @@ img { max-width: 100%; }
 				border: 1px solid #eee;
 				border-top: none;
 			}
-			
+
 				#section-pattern table tfoot span#line-sponsor {
 					color: #444;
 					font: normal normal 10px/20px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -704,7 +702,7 @@ img { max-width: 100%; }
 					letter-spacing: 2px;
 					padding-left: 15px;
 				}
-				
+
 				#section-pattern table tfoot a {
 					color: #dd3333;
 				}
@@ -725,14 +723,14 @@ img { max-width: 100%; }
 	/*---------------------------------------------------
 		3.11 Section Red Form
 	---------------------------------------------------*/
-	
+
 	#section-red-form {
 		color: #fff;
 		padding: 0px 0;
 		background: #161616;
 		padding: 60px 0;
 	}
-	
+
 		#section-red-form h2 {
 			color: #dd3333;
 			margin-bottom: 5px;
@@ -742,8 +740,8 @@ img { max-width: 100%; }
 			color: #777;
 			margin-bottom: 40px;
 		}
-		
-		
+
+
 		/* Register Form */
 		#section-red-form form {
 			margin-bottom: 40px;
@@ -751,36 +749,36 @@ img { max-width: 100%; }
 
 		#section-red-form form p,
 		#section-red-form label,
-		#section-red-form legend { 
+		#section-red-form legend {
 			font: normal 15px/23px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 		}
-		
+
 		#section-red-form label {
 			display: inline-block;
 			float: left;
 			width: 155px;
 			margin: 6px 0;
 		}
-		
-		#section-red-form input, 
-		#section-red-form textarea, 
-		#section-red-form select { 
-			width: 280px; 
-			padding: 14px 20px; 
-			color: #eee; 
+
+		#section-red-form input,
+		#section-red-form textarea,
+		#section-red-form select {
+			width: 280px;
+			padding: 14px 20px;
+			color: #eee;
 			background: #333;
-			margin: 0 0 35px 0; 
+			margin: 0 0 35px 0;
 			border: 0;
 			outline: none;
 		}
-		
-		#section-red-form input:focus, 
-		#section-red-form textarea:focus, 
-		#section-red-form select:focus { 
+
+		#section-red-form input:focus,
+		#section-red-form textarea:focus,
+		#section-red-form select:focus {
 			color: #fff;
 			background-color: #dd3333;
 		}
-		
+
 		#section-red-form button.submit {
 			font: bold 20px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 			text-transform: uppercase;
@@ -796,15 +794,15 @@ img { max-width: 100%; }
 			-khtml-border-radius: 3px;
 			border-radius: 3px;
 		}
-		
-		#section-red-form button.submit:hover { 
+
+		#section-red-form button.submit:hover {
 			color: #dd3333;
-			background: #fff; 
+			background: #fff;
 		}
-		
-		#section-red-form span.required { 
+
+		#section-red-form span.required {
 			color: #dd3333;
-			font-size: 13px;  
+			font-size: 13px;
 		} /* Select the color of the * if the field is required. */
 
 		#section-red-form #contact-warning {
@@ -814,7 +812,7 @@ img { max-width: 100%; }
 			padding: 20px 25px;
 			margin-bottom: 30px;
 		}
-		
+
 		#section-red-form #contact-success {
 			display: none;
 			color: #77aa44;
@@ -839,19 +837,19 @@ img { max-width: 100%; }
 				font: normal 14px/25px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 				margin-bottom: 50px;
 			}
-			
+
 			#section-red-form #box-contact p.address {
 				color: #aaa;
 				font: normal 14px/25px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 				margin-bottom: 50px;
 			}
-			
-			
+
+
 			#section-red-form #box-contact a {
 				color: #fff;
 				font: normal normal 19px/28px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 			}
-			
+
 				#section-red-form #box-contact a:hover {
 					color: #dd3333;
 				}
@@ -884,14 +882,14 @@ img { max-width: 100%; }
 	/*---------------------------------------------------
 		3.12 Section Green Form
 	---------------------------------------------------*/
-	
+
 	#section-green-form {
 		color: #fff;
 		padding: 0px 0;
 		background: #161616;
 		padding: 60px 0;
 	}
-	
+
 		#section-green-form h2 {
 			color: #77aa44;
 			margin-bottom: 5px;
@@ -901,7 +899,7 @@ img { max-width: 100%; }
 			color: #777;
 			margin-bottom: 40px;
 		}
-		
+
 		/* Register Form */
 		#section-green-form form {
 			margin-bottom: 40px;
@@ -909,36 +907,36 @@ img { max-width: 100%; }
 
 		#section-green-form form p,
 		#section-green-form label,
-		#section-green-form legend { 
+		#section-green-form legend {
 			font: normal 15px/23px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 		}
-		
+
 		#section-green-form label {
 			display: inline-block;
 			float: left;
 			width: 155px;
 			margin: 6px 0;
 		}
-		
-		#section-green-form input, 
-		#section-green-form textarea, 
-		#section-green-form select { 
-			width: 280px; 
-			padding: 14px 20px; 
-			color: #eee; 
+
+		#section-green-form input,
+		#section-green-form textarea,
+		#section-green-form select {
+			width: 280px;
+			padding: 14px 20px;
+			color: #eee;
 			background: #333;
-			margin: 0 0 35px 0; 
+			margin: 0 0 35px 0;
 			border: 0;
 			outline: none;
 		}
-		
-		#section-green-form input:focus, 
-		#section-green-form textarea:focus, 
-		#section-green-form select:focus { 
+
+		#section-green-form input:focus,
+		#section-green-form textarea:focus,
+		#section-green-form select:focus {
 			color: #fff;
 			background-color: #77aa44;
 		}
-		
+
 		#section-green-form button.submit {
 			font: bold 20px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 			text-transform: uppercase;
@@ -954,15 +952,15 @@ img { max-width: 100%; }
 			-khtml-border-radius: 3px;
 			border-radius: 3px;
 		}
-		
-		#section-green-form button.submit:hover { 
+
+		#section-green-form button.submit:hover {
 			color: #77aa44;
-			background: #fff; 
+			background: #fff;
 		}
-		
-		#section-green-form span.required { 
+
+		#section-green-form span.required {
 			color: #77aa44;
-			font-size: 13px;  
+			font-size: 13px;
 		} /* Select the color of the * if the field is required. */
 
 		#section-green-form #contact-warning {
@@ -972,7 +970,7 @@ img { max-width: 100%; }
 			padding: 20px 25px;
 			margin-bottom: 30px;
 		}
-		
+
 		#section-green-form #contact-success {
 			display: none;
 			color: #77aa44;
@@ -997,19 +995,19 @@ img { max-width: 100%; }
 				font: normal 14px/25px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 				margin-bottom: 50px;
 			}
-			
+
 			#section-green-form #box-contact p.address {
 				color: #aaa;
 				font: normal 14px/25px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 				margin-bottom: 50px;
 			}
-			
-			
+
+
 			#section-green-form #box-contact a {
 				color: #fff;
 				font: normal 19px/28px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 			}
-			
+
 				#section-green-form #box-contact a:hover {
 					color: #77aa44;
 				}
@@ -1042,14 +1040,14 @@ img { max-width: 100%; }
 	/*---------------------------------------------------
 		3.13 Section Yellow Form
 	---------------------------------------------------*/
-	
+
 	#section-yellow-form {
 		color: #fff;
 		padding: 0px 0;
 		background: #161616;
 		padding: 60px 0;
 	}
-	
+
 		#section-yellow-form h2 {
 			color: #ddaa44;
 			margin-bottom: 5px;
@@ -1059,7 +1057,7 @@ img { max-width: 100%; }
 			color: #777;
 			margin-bottom: 40px;
 		}
-		
+
 		/* Register Form */
 		#section-yellow-form form {
 			margin-bottom: 40px;
@@ -1067,36 +1065,36 @@ img { max-width: 100%; }
 
 		#section-yellow-form form p,
 		#section-yellow-form label,
-		#section-yellow-form legend { 
+		#section-yellow-form legend {
 			font: normal 15px/23px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 		}
-		
+
 		#section-yellow-form label {
 			display: inline-block;
 			float: left;
 			width: 155px;
 			margin: 6px 0;
 		}
-		
-		#section-yellow-form input, 
-		#section-yellow-form textarea, 
-		#section-yellow-form select { 
-			width: 280px; 
-			padding: 14px 20px; 
-			color: #eee; 
+
+		#section-yellow-form input,
+		#section-yellow-form textarea,
+		#section-yellow-form select {
+			width: 280px;
+			padding: 14px 20px;
+			color: #eee;
 			background: #333;
-			margin: 0 0 35px 0; 
+			margin: 0 0 35px 0;
 			border: 0;
 			outline: none;
 		}
-		
-		#section-yellow-form input:focus, 
-		#section-yellow-form textarea:focus, 
-		#section-yellow-form select:focus { 
+
+		#section-yellow-form input:focus,
+		#section-yellow-form textarea:focus,
+		#section-yellow-form select:focus {
 			color: #fff;
 			background-color: #ddaa44;
 		}
-		
+
 		#section-yellow-form button.submit {
 			font: bold 20px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 			text-transform: uppercase;
@@ -1112,15 +1110,15 @@ img { max-width: 100%; }
 			-khtml-border-radius: 3px;
 			border-radius: 3px;
 		}
-		
-			#section-yellow-form button.submit:hover { 
+
+			#section-yellow-form button.submit:hover {
 				color: #ddaa44;
-				background: #fff; 
+				background: #fff;
 			}
-		
-		#section-yellow-form span.required { 
+
+		#section-yellow-form span.required {
 			color: #ddaa44;
-			font-size: 13px;  
+			font-size: 13px;
 		} /* Select the color of the * if the field is required. */
 
 		#section-yellow-form #contact-warning {
@@ -1130,7 +1128,7 @@ img { max-width: 100%; }
 			padding: 20px 25px;
 			margin-bottom: 30px;
 		}
-		
+
 		#section-yellow-form #contact-success {
 			display: none;
 			color: #77aa44;
@@ -1155,19 +1153,19 @@ img { max-width: 100%; }
 				font: normal 14px/25px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 				margin-bottom: 50px;
 			}
-			
+
 			#section-yellow-form #box-contact p.address {
 				color: #aaa;
 				font: normal 14px/25px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 				margin-bottom: 50px;
 			}
-			
-			
+
+
 			#section-yellow-form #box-contact a {
 				color: #fff;
 				font: normal 19px/28px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 			}
-			
+
 				#section-yellow-form #box-contact a:hover {
 					color: #ddaa44;
 				}
@@ -1244,15 +1242,15 @@ img { max-width: 100%; }
 			-khtml-border-radius: 3px;
 			border-radius: 3px;
 	}
-		
-		.button-red-on-white:hover { 
+
+		.button-red-on-white:hover {
 			color: #dd3333;
-			background: #000; 
+			background: #000;
 		}
 
-		.button-red-on-black:hover { 
+		.button-red-on-black:hover {
 			color: #dd3333;
-			background: #fff; 
+			background: #fff;
 		}
 
 	.button-green-on-white, .button-green-on-black {
@@ -1271,15 +1269,15 @@ img { max-width: 100%; }
 			-khtml-border-radius: 3px;
 			border-radius: 3px;
 	}
-		
-		.button-green-on-white:hover { 
+
+		.button-green-on-white:hover {
 			color: #77aa44;
-			background: #000; 
+			background: #000;
 		}
 
-		.button-green-on-black:hover { 
+		.button-green-on-black:hover {
 			color: #77aa44;
-			background: #fff; 
+			background: #fff;
 		}
 
 	.button-yellow-on-white, .button-yellow-on-black {
@@ -1298,15 +1296,15 @@ img { max-width: 100%; }
 			-khtml-border-radius: 3px;
 			border-radius: 3px;
 	}
-		
-		.button-yellow-on-white:hover { 
+
+		.button-yellow-on-white:hover {
 			color: #ddaa44;
-			background: #000; 
+			background: #000;
 		}
 
-		.button-yellow-on-black:hover { 
+		.button-yellow-on-black:hover {
 			color: #ddaa44;
-			background: #fff; 
+			background: #fff;
 		}
 
 	.button-white-on-red, .button-white-on-green, .button-white-on-yellow {
@@ -1325,20 +1323,20 @@ img { max-width: 100%; }
 			-khtml-border-radius: 3px;
 			border-radius: 3px;
 	}
-		
-		.button-white-on-red:hover { 
+
+		.button-white-on-red:hover {
 			color: #dd3333;
-			background: #fff; 
+			background: #fff;
 		}
 
-		.button-white-on-green:hover { 
+		.button-white-on-green:hover {
 			color: #77aa44;
-			background: #fff; 
+			background: #fff;
 		}
 
-		.button-white-on-yellow:hover { 
+		.button-white-on-yellow:hover {
 			color: #ddaa44;
-			background: #fff; 
+			background: #fff;
 		}
 
 	.button-black-on-red, .button-black-on-green, .button-black-on-yellow {
@@ -1357,20 +1355,20 @@ img { max-width: 100%; }
 			-khtml-border-radius: 3px;
 			border-radius: 3px;
 	}
-		
-		.button-black-on-red:hover { 
+
+		.button-black-on-red:hover {
 			color: #dd3333;
-			background: #000; 
+			background: #000;
 		}
 
-		.button-black-on-green:hover { 
+		.button-black-on-green:hover {
 			color: #77aa44;
-			background: #000; 
+			background: #000;
 		}
 
-		.button-black-on-yellow:hover { 
+		.button-black-on-yellow:hover {
 			color: #ddaa44;
-			background: #000; 
+			background: #000;
 		}
 
 	.button-blue-on-white, .button-blue-on-black {
@@ -1446,6 +1444,6 @@ img { max-width: 100%; }
    color: #dd3333;
 }
 
-:-moz-placeholder {  
+:-moz-placeholder {
 	color: #dd3333;
 }
